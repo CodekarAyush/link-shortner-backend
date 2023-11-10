@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main"
+    "start": "babel-node index.js"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +23,10 @@
     "nanoid": "^5.0.3",
     "nodemon": "^3.0.1",
     "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3"
   }
 }

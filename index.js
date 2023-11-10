@@ -20,6 +20,9 @@ app.use('/api/url',UrlRouter);
 app.use('/api/users',userRoute);
 app.use('/api/functionality',functionalityRouter);
 app.get('/:shortId',redirectUrl)
+app.get('/',(req,res)=>{
+  res.send("welcome to cromax backend")
+})
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

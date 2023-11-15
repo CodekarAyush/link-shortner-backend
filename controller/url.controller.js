@@ -23,7 +23,7 @@ exports.handleUrl= async (req,res)=>{
             shortId: shortid,redirectUrl:req.body.url ,visitHistory:[],user:userId
          })
       }
-      return res.status(201).json({id:shortid,message:"link shortened successfull",redirectUrl:`${process.env.BASE_URL}/${shortid}`})
+      return res.status(201).json({id:shortid,message:"link shortened successfull",redirectUrl:`${process.env.BASE_URL}${shortid}`})
       
    } catch (error) {
 

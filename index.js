@@ -10,7 +10,7 @@ const functionalityRouter = require('./routes/functionality.route')
 const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 3000;
 app.use(cors({
-  origin : 'http://localhost:3000', credentials: true
+  origin : 'https://cromax-link-shortner.onrender.com', credentials: true
 }))
 
 app.use(cookieParser())

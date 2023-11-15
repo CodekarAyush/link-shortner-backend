@@ -10,7 +10,7 @@ const functionalityRouter = require('./routes/functionality.route')
 const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 3000;
 app.use(cors({
-  origin : 'https://link-shortner-frontend.vercel.app', credentials: true
+  origin : 'https://cromax.vercel.app', credentials: true
 }))
 
 app.use(cookieParser())
